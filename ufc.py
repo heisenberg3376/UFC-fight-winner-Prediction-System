@@ -50,14 +50,9 @@ with l:
         resp_bytesIO_1 = BytesIO(resp1.content)
 
         if(resp1.status_code!=200):
-            st.header('Image Not Found')
-            st.write('##')
-            st.write('##')
-            st.write('##')
-            st.write('##')
-            st.write('###')
-            st.write('###')
-            st.write('###')
+           fighter1_url = f"https://fightingtomatoes.com/images/fighters/blank-fighter-image.jpg"
+           resp1 = requests.get(fighter1_url)
+           resp_bytesIO_1 = BytesIO(resp1.content)
 
         
         #fighter1_data = fighter_data[fighter_data['fighter_name']==selected_fighter_1]
@@ -121,14 +116,9 @@ with r:
         resp_bytesIO_2 = BytesIO(resp2.content)
 
         if(resp2.status_code!=200):
-            st.header('Image Not Found')
-            st.write('##')
-            st.write('##')
-            st.write('##')
-            st.write('##')
-            st.write('###')
-            st.write('###')
-            st.write('###')
+           fighter1_url = f"https://fightingtomatoes.com/images/fighters/blank-fighter-image.jpg"
+           resp1 = requests.get(fighter1_url)
+           resp_bytesIO_1 = BytesIO(resp1.content)
         
         else:
             st.image(resp_bytesIO_2,width=400)
