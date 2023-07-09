@@ -57,8 +57,7 @@ with l:
         
         #fighter1_data = fighter_data[fighter_data['fighter_name']==selected_fighter_1]
         
-        else:
-            st.image(resp_bytesIO_1,width=400)
+        st.image(resp_bytesIO_1,width=400)
     #st.dataframe(fighter_df[fighter_df['name']==selected_fighter_1])
     st.dataframe(df_red[df_red['fighter_name_Red']==selected_fighter_1].iloc[0],use_container_width=True)
     
@@ -120,8 +119,7 @@ with r:
            resp2 = requests.get(fighter2_url)
            resp_bytesIO_2 = BytesIO(resp1.content)
         
-        else:
-            st.image(resp_bytesIO_2,width=400)
+        st.image(resp_bytesIO_2,width=400)
 
     #st.dataframe(fighter_df[fighter_df['name']==selected_fighter_2])
     st.dataframe(df_blue[df_blue['fighter_name_Blue']==selected_fighter_2].iloc[0],use_container_width=True)
