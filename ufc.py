@@ -14,7 +14,8 @@ selected_fighter_2 = 0
 fighter_data = pd.read_csv('raw_fighter_details.csv')
 
 st.set_page_config(layout='wide')
-
+   
+st.header('UFC fight Winner Prediction System')
 #fighter_df = pd.read_json('fighters.json',lines = True)[['name','wins','losses','draws']]
 
 l,m,r = st.columns((2,1,2),gap='large')
@@ -28,7 +29,7 @@ df_red = df_red.drop("Unnamed: 0",axis=1)
 ##df_blue = df_blue[df_blue['Weight_Blue']==weight_class]
 ##df_red = df_red[df_red['Weight_Red']==weight_class]
    
-st.header('UFC fight Winner Prediction System')
+
 
 with l:
     selected_fighter_1 = str(st.selectbox('Select a Fighter for Red corner',list(set(df_red['fighter_name_Red'])),key='first',index=827))
