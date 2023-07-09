@@ -7,6 +7,8 @@ import pickle
 import numpy as np
 import sklearn
 
+   
+st.header('UFC fight Winner Prediction System')
 selected_fighter_1 = 0
 selected_fighter_2 = 0
 
@@ -26,8 +28,7 @@ df_red = df_red.drop("Unnamed: 0",axis=1)
 ##weight_class = st.selectbox('Select Weight class',fighter_data['Weight'])
 ##df_blue = df_blue[df_blue['Weight_Blue']==weight_class]
 ##df_red = df_red[df_red['Weight_Red']==weight_class]
-   
-st.header('UFC fight Winner Prediction System')
+
 
 with l:
     selected_fighter_1 = str(st.selectbox('Select a Fighter for Red corner',list(set(df_red['fighter_name_Red'])),key='first',index=827))
@@ -159,9 +160,9 @@ with mid:
     if(selected_fighter_1 != selected_fighter_2):
         if(st.button('Predict',type='primary',use_container_width=True)):
             if(log_reg.predict(X_test)==1):
-                st.header(f'There is a Higher Probability that {selected_fighter_1} wins')
+                st.header(f'{selected_fighter_1} wins')
             else:
-                st.header(f'There is a Higher Probability that "{selected_fighter_2}" wins')
+                st.header(f'{selected_fighter_2} wins')
     else:
         st.header('Both Fighters cannot be same')
         st.button('Predict',type='primary',use_container_width=True,disabled=True)
