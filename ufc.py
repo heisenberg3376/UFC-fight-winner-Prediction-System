@@ -7,8 +7,7 @@ import pickle
 import numpy as np
 import sklearn
 
-   
-st.header('UFC fight Winner Prediction System')
+
 selected_fighter_1 = 0
 selected_fighter_2 = 0
 
@@ -28,7 +27,8 @@ df_red = df_red.drop("Unnamed: 0",axis=1)
 ##weight_class = st.selectbox('Select Weight class',fighter_data['Weight'])
 ##df_blue = df_blue[df_blue['Weight_Blue']==weight_class]
 ##df_red = df_red[df_red['Weight_Red']==weight_class]
-
+   
+st.header('UFC fight Winner Prediction System')
 
 with l:
     selected_fighter_1 = str(st.selectbox('Select a Fighter for Red corner',list(set(df_red['fighter_name_Red'])),key='first',index=827))
