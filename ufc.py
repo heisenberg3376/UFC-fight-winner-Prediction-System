@@ -14,7 +14,7 @@ fighter_data = pd.read_csv('raw_fighter_details.csv')
 
 st.set_page_config(layout='wide')
 
-fighter_df = pd.read_json('fighters.json',lines = True)[['name','wins','losses','draws']]
+#fighter_df = pd.read_json('fighters.json',lines = True)[['name','wins','losses','draws']]
 
 l,m,r = st.columns((2,1,2),gap='large')
 
@@ -34,13 +34,13 @@ with l:
     selected_fighter_1_ = selected_fighter_1.replace(' ','')
     st.write(list(set(df_red['fighter_name_Red'])).index(selected_fighter_1))
     if(selected_fighter_1 == 'Conor McGregor'):
-        st.image('conor.png',width=360)
+        st.image('images-of-some-famous-fighters/conor.png',width=360)
     elif(selected_fighter_1 == 'Josh Emmett'):
-        st.image('joshemmet.png',width=360)
+        st.image('images-of-some-famous-fighters/joshemmet.png',width=360)
     elif(selected_fighter_1 == 'Georges St-Pierre'):
-        st.image('gsp.png',width=360)
+        st.image('images-of-some-famous-fighters/gsp.png',width=360)
     elif(selected_fighter_1 == 'Zabit Magomedsharipov'):
-        st.image('zbt.png',width=360)
+        st.image('images-of-some-famous-fighters/zbt.png',width=360)
 
     else:
         fighter1_url = f"https://fightingtomatoes.com/images/fighters/{selected_fighter_1_}.jpg"
@@ -106,13 +106,13 @@ with r:
     st.write(list(set(df_blue['fighter_name_Blue'])).index(selected_fighter_2))
 
     if(selected_fighter_2 == 'Conor McGregor'):
-        st.image('conor.png',width=360)
+        st.image('images-of-some-famous-fighters/conor.png',width=360)
     elif(selected_fighter_2 == 'Josh Emmett'):
-        st.image('joshemmet.png',width=360)
+        st.image('images-of-some-famous-fighters/joshemmet.png',width=360)
     elif(selected_fighter_2 == 'Georges St-Pierre'):
-        st.image('gsp.png',width=360)
+        st.image('images-of-some-famous-fighters/gsp.png',width=360)
     elif(selected_fighter_2 == 'Zabit Magomedsharipov'):
-        st.image('zbt.png',width=360)
+        st.image('images-of-some-famous-fighters/zbt.png',width=360)
     else:    
         fighter2_url = f"https://fightingtomatoes.com/images/fighters/{selected_fighter_2_}.jpg"
         resp2 = requests.get(fighter2_url)
