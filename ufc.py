@@ -30,7 +30,7 @@ df_red = df_red.drop("Unnamed: 0",axis=1)
 st.header('UFC fight Winner Prediction System')
 
 with l:
-    selected_fighter_1 = str(st.selectbox('Select a Fighter for Red corner',list(set(df_red['fighter_name_Red'])),key='first',index=38))
+    selected_fighter_1 = str(st.selectbox('Select a Fighter for Red corner',list(set(df_red['fighter_name_Red'])),key='first',index=827))
     selected_fighter_1_ = selected_fighter_1.replace(' ','')
     st.write(list(set(df_red['fighter_name_Red'])).index(selected_fighter_1))
     if(selected_fighter_1 == 'Conor McGregor'):
@@ -101,7 +101,7 @@ with m:
 
 with r:
 
-    selected_fighter_2 = str(st.selectbox('Select a Fighter for Blue corner',list(set(df_blue['fighter_name_Blue'])),key='second',index=844))
+    selected_fighter_2 = str(st.selectbox('Select a Fighter for Blue corner',list(set(df_blue['fighter_name_Blue'])),key='second',index=754))
     selected_fighter_2_ = selected_fighter_2.replace(' ','')
     st.write(list(set(df_blue['fighter_name_Blue'])).index(selected_fighter_2))
 
@@ -137,7 +137,7 @@ with r:
     blue_fighter_data = df_blue[df_blue['fighter_name_Blue']==selected_fighter_2].iloc[0]
     pred_features = pd.concat([pred_features, blue_fighter_data],axis=1,ignore_index=True)
 
-log_reg = pickle.load(open('log_reg.pickle','rb'))
+log_reg = pickle.load(open('models/log_reg.pickle','rb'))
 
 array1 = np.array(pred_features.iloc[1:13,0])
 array2 = np.array(pred_features.iloc[14:26,1])
