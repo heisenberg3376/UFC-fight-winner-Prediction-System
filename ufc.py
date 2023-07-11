@@ -164,8 +164,8 @@ if selected=='Home':
 #st.dataframe(df_blue[df_blue['fighter_name_Blue']=='Khabib Nurmagomedov'])
 
 # didnt find
-predFeatures = 0
 elif selected=="Did'nt Find your fighter?":
+
    names = pd.read_csv('fighter_names.csv')
 
    l,m,r = st.columns((2,1,2))
