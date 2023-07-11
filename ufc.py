@@ -35,7 +35,7 @@ df_red = df_red.drop("Unnamed: 0",axis=1)
 
 
 with l:
-    selected_fighter_1 = str(st.selectbox('Select a Fighter for Red corner',list(set(df_red['fighter_name_Red'])),key='first',index=827))
+    selected_fighter_1 = str(st.selectbox('Select a Fighter for Red corner',list(set(df_red['fighter_name_Red'])),key='first',index=684))
     selected_fighter_1_ = selected_fighter_1.replace(' ','')
     st.write(list(set(df_red['fighter_name_Red'])).index(selected_fighter_1))
     if(selected_fighter_1 == 'Conor McGregor'):
@@ -100,7 +100,7 @@ with m:
 
 with r:
 
-    selected_fighter_2 = str(st.selectbox('Select a Fighter for Blue corner',list(set(df_blue['fighter_name_Blue'])),key='second',index=754))
+    selected_fighter_2 = str(st.selectbox('Select a Fighter for Blue corner',list(set(df_blue['fighter_name_Blue'])),key='second',index=1627))
     selected_fighter_2_ = selected_fighter_2.replace(' ','')
     st.write(list(set(df_blue['fighter_name_Blue'])).index(selected_fighter_2))
 
