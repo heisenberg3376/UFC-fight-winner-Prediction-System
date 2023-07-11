@@ -8,7 +8,7 @@ import numpy as np
 import sklearn
 from streamlit_option_menu import option_menu
 
-   
+
 selected_fighter_1 = 0
 selected_fighter_2 = 0
    
@@ -163,4 +163,11 @@ if selected=='Home':
 
 #st.dataframe(df_blue[df_blue['fighter_name_Blue']=='Khabib Nurmagomedov'])
 elif selected=="Did'nt Find your fighter?":
+   names = pd.read_csv('fighter_names.csv')
+
+   l,m,r = st.columns((2,1,2))
+   with l:
+      fighter_1 = st.selectbox(names)
+   with r:
+      fighter_2 = st.selectbox(names)
    st.markdown('''# Find him''')
