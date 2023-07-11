@@ -201,7 +201,7 @@ elif selected=="Did'nt Find your fighter?":
 
    with r:
       
-      fighter_2 = st.selectbox('select a fighter for red corner',names['Fighter_fullName'],key='blue')
+      fighter_2 = st.selectbox('select a fighter for blue corner',names['Fighter_fullName'],key='blue')
       fighter_2_ = fighter_2.replace(' ','')
       st.write(list(np.where(names["Fighter_fullName"] == fighter_2)))
       if(fighter_2 == 'Conor McGregor'):
