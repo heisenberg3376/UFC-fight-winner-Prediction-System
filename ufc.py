@@ -163,4 +163,4 @@ if selected=='Home':
 
 #st.dataframe(df_blue[df_blue['fighter_name_Blue']=='Khabib Nurmagomedov'])
 elif selected=="Did'nt Find your fighter?":
-   st.markdown('Search for him')
+   st.markdown('''# Find him''')
