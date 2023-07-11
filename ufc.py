@@ -167,7 +167,7 @@ elif selected=="Did'nt Find your fighter?":
 
    l,m,r = st.columns((2,1,2))
    with l:
-      fighter_1 = st.selectbox(names)
+      fighter_1 = st.selectbox(names['Fighter_fullName'])
    with r:
-      fighter_2 = st.selectbox(names)
+      fighter_2 = st.selectbox(names['Fighter_fullName'])
    st.markdown('''# Find him''')
