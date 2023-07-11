@@ -18,14 +18,14 @@ st.set_page_config(layout='wide')
    
 selected = option_menu('Main Menu',['Home',"Did'nt Find your fighter?",'contact','More Projects'],icons=['house','gear','envelope','book'],orientation='horizontal')
 st.header('UFC fight Winner Prediction System')
+df_blue = pd.read_csv('df_blue.csv')
+df_blue = df_blue.drop("Unnamed: 0",axis=1)
+df_red = pd.read_csv('df_red.csv')
+df_red = df_red.drop("Unnamed: 0",axis=1)
    #fighter_df = pd.read_json('fighters.json',lines = True)[['name','wins','losses','draws']]
 if selected=='Home':
    l,m,r = st.columns((2,1,2),gap='large')
    
-   df_blue = pd.read_csv('df_blue.csv')
-   df_blue = df_blue.drop("Unnamed: 0",axis=1)
-   df_red = pd.read_csv('df_red.csv')
-   df_red = df_red.drop("Unnamed: 0",axis=1)
    
    ##weight_class = st.selectbox('Select Weight class',fighter_data['Weight'])
    ##df_blue = df_blue[df_blue['Weight_Blue']==weight_class]
@@ -196,6 +196,12 @@ elif selected=="Did'nt Find your fighter?":
            #fighter1_data = fighter_data[fighter_data['fighter_name']==selected_fighter_1]
            
          st.image(resp_bytesIO_1,width=400)
+      if fighter_1 in list(set(df_red['fighter_name_Red'])):
+         st.write('found in red')
+      if fighter_1 in list(set(df_blue['fighter_name_Blue'])):
+         st.write('found in blue')
+      else:
+         st.write('not found')
    with r:
       fighter_2 = st.selectbox('select a fighter for red corner',names['Fighter_fullName'],key='blue')
       fighter_2_ = fighter_2.replace(' ','')
@@ -223,4 +229,10 @@ elif selected=="Did'nt Find your fighter?":
            #fighter1_data = fighter_data[fighter_data['fighter_name']==selected_fighter_1]
            
          st.image(resp_bytesIO_2,width=400)
+      if fighter_2 in list(set(df_red['fighter_name_Red'])):
+         st.write('found in red')
+      if fighter_2 in list(set(df_blue['fighter_name_Blue'])):
+         st.write('found in blue')
+      else:
+         st.write('not found')
    st.markdown('''# Find him''')
