@@ -163,4 +163,5 @@ with mid:
 
 
 #st.dataframe(df_blue[df_blue['fighter_name_Blue']=='Khabib Nurmagomedov'])
-
+if selected=="Didn't Find your fighter?":
+   st.markdown('Search for him')
