@@ -233,7 +233,7 @@ names = pd.read_csv('fighter_names.csv')
            
          st.image(resp_bytesIO_2,width=400)
 
-   st.markdown('''# Find him''')
+'''
 
 
 
