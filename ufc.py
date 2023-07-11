@@ -9,15 +9,15 @@ import sklearn
 from streamlit_option_menu import option_menu
 
    
-   selected_fighter_1 = 0
-   selected_fighter_2 = 0
+selected_fighter_1 = 0
+selected_fighter_2 = 0
    
-   fighter_data = pd.read_csv('raw_fighter_details.csv')
+fighter_data = pd.read_csv('raw_fighter_details.csv')
    
-   st.set_page_config(layout='wide')
+st.set_page_config(layout='wide')
    
-   selected = option_menu('Main Menu',['Home',"Did'nt Find your fighter?",'contact','More Projects'],icons=['house','gear','envelope','book'],orientation='horizontal')
-   st.header('UFC fight Winner Prediction System')
+selected = option_menu('Main Menu',['Home',"Did'nt Find your fighter?",'contact','More Projects'],icons=['house','gear','envelope','book'],orientation='horizontal')
+st.header('UFC fight Winner Prediction System')
    #fighter_df = pd.read_json('fighters.json',lines = True)[['name','wins','losses','draws']]
 if selected=='Home':
    l,m,r = st.columns((2,1,2),gap='large')
