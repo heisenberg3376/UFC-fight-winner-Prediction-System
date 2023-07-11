@@ -16,7 +16,7 @@ fighter_data = pd.read_csv('raw_fighter_details.csv')
 
 st.set_page_config(layout='wide')
 with st.sidebar:
-   selected = option_menu('Main Menu',['Home',"Did'nt Find your fighter?"])
+   selected = option_menu('Main Menu',['Home',"Did'nt Find your fighter?"],orientation='horizontal')
    
 st.header('UFC fight Winner Prediction System')
 #fighter_df = pd.read_json('fighters.json',lines = True)[['name','wins','losses','draws']]
