@@ -209,7 +209,7 @@ elif selected=="Did'nt Find your fighter?":
    
       else:
          fighter2_url = f"https://fightingtomatoes.com/images/fighters/{fighter_2_}.jpg"
-         resp1 = requests.get(fighter2_url)
+         resp2 = requests.get(fighter2_url)
          resp_bytesIO_2 = BytesIO(resp1.content)
    
          if(resp2.status_code!=200):
