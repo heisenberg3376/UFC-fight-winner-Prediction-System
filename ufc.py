@@ -17,13 +17,14 @@ fighter_data = pd.read_csv('raw_fighter_details.csv')
 st.set_page_config(layout='wide')
    
 selected = option_menu('Main Menu',['Home',"Did'nt Find your fighter?",'contact','More Projects'],icons=['house','gear','envelope','book'],orientation='horizontal')
-st.header('UFC fight Winner Prediction System')
+
 df_blue = pd.read_csv('df_blue.csv')
 df_blue = df_blue.drop("Unnamed: 0",axis=1)
 df_red = pd.read_csv('df_red.csv')
 df_red = df_red.drop("Unnamed: 0",axis=1)
    #fighter_df = pd.read_json('fighters.json',lines = True)[['name','wins','losses','draws']]
 if selected=='Home':
+   st.header('UFC fight Winner Prediction System')
    l,m,r = st.columns((2,1,2),gap='large')
    
    
@@ -165,6 +166,7 @@ if selected=='Home':
 
 # didnt find
 elif selected=="Did'nt Find your fighter?":
+   st.header('UFC fight Winner Prediction System')
 
    names = pd.read_csv('fighter_names.csv')
 
