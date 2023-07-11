@@ -164,7 +164,7 @@ if selected=='Home':
 #st.dataframe(df_blue[df_blue['fighter_name_Blue']=='Khabib Nurmagomedov'])
 
 # didnt find
-
+predFeatures = 0
 elif selected=="Did'nt Find your fighter?":
    names = pd.read_csv('fighter_names.csv')
 
@@ -197,12 +197,13 @@ elif selected=="Did'nt Find your fighter?":
            
          st.image(resp_bytesIO_1,width=400)
       if fighter_1 in list(set(df_red['fighter_name_Red'])):
-         st.write('found in red')
-      if fighter_1 in list(set(df_blue['fighter_name_Blue'])):
-         st.write('found in blue')
+         predFeatures = df_red[df_red['fighter_name_Red']==selected_fighter_1].iloc[0]
+      elif fighter_1 in list(set(df_blue['fighter_name_Blue'])):
+         predFeatures = df_blue[df_blue['fighter_name_Blue']==selected_fighter_1].iloc[0]
       else:
          st.write('not found')
    with r:
+      
       fighter_2 = st.selectbox('select a fighter for red corner',names['Fighter_fullName'],key='blue')
       fighter_2_ = fighter_2.replace(' ','')
       st.write(list(np.where(names["Fighter_fullName"] == fighter_2)))
@@ -230,9 +231,11 @@ elif selected=="Did'nt Find your fighter?":
            
          st.image(resp_bytesIO_2,width=400)
       if fighter_2 in list(set(df_red['fighter_name_Red'])):
-         st.write('found in red')
+         red_fighter_data = df_red[df_red['fighter_name_Red']==fighter_2].iloc[0]
+         predFeatures = pd.concat([predFeatures, red_fighter_data],axis=1,ignore_index=True)
       if fighter_2 in list(set(df_blue['fighter_name_Blue'])):
-         st.write('found in blue')
+         blue_fighter_data = df_blue[df_blue['fighter_name_Blue']==fighter_2].iloc[0]
+         predFeatures = pd.concat([predFeatures, blue_fighter_data],axis=1,ignore_index=True)
       else:
          st.write('not found')
    st.markdown('''# Find him''')
