@@ -167,9 +167,9 @@ if selected=='Home':
 # didnt find
 elif selected=="Having Problem?":
    st.header('UFC fight Winner Prediction System')
-   st.markdown('''### 1. Select a fighter for Red corner
-                  2. Select a fighter for Blue corner
-                  3. There is a Logistic Regression model to predict the winner''')
+   st.markdown('''<h3>1. Select a fighter for Red corner</h3>
+                  <h3>2. Select a fighter for Blue corner</h3>
+                  <h3>3. There is a Logistic Regression model to predict the winner</h3>''')
    
    
 
