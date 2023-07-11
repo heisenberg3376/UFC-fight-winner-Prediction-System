@@ -172,7 +172,7 @@ elif selected=="Did'nt Find your fighter?":
    with l:
       fighter_1 = st.selectbox('select a fighter for red corner',names['Fighter_fullName'],key='red')
       fighter_1_ = fighter_1.replace(' ','')
-      st.write(list(np.where(df["Fighter_fullName"] == fighter_1)))
+      st.write(list(np.where(names["Fighter_fullName"] == fighter_1)))
       if(fighter_1 == 'Conor McGregor'):
           st.image('images-of-some-famous-fighters/conor.png',width=360)
       elif(fighter_1 == 'Josh Emmett'):
@@ -199,7 +199,7 @@ elif selected=="Did'nt Find your fighter?":
    with r:
       fighter_2 = st.selectbox('select a fighter for red corner',names['Fighter_fullName'],key='blue')
       fighter_2_ = fighter_2.replace(' ','')
-      st.write(list(np.where(df["Fighter_fullName"] == fighter_2)))
+      st.write(list(np.where(names["Fighter_fullName"] == fighter_2)))
       if(fighter_2 == 'Conor McGregor'):
           st.image('images-of-some-famous-fighters/conor.png',width=360)
       elif(fighter_2 == 'Josh Emmett'):
