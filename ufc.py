@@ -227,3 +227,11 @@ elif selected=="Did'nt Find your fighter?":
          st.image(resp_bytesIO_2,width=400)
 
    st.markdown('''# Find him''')
+
+
+
+elif selected=='contact':
+   st.write('Check out my [Github Profile](https://github.com/Phani8910)')
+   st.write('check out my [Kaggle Profile](https://www.kaggle.com/phanendrasairam)')
+
+
