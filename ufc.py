@@ -236,8 +236,7 @@ names = pd.read_csv('fighter_names.csv')
 '''
 
 
-
-elif selected=='contact':
+if selected=='contact':
    st.header('Contact me with :')
    st.write('Check out my [Github Profile](https://github.com/Phani8910)')
    st.write('check out my [Kaggle Profile](https://www.kaggle.com/phanendrasairam)')
