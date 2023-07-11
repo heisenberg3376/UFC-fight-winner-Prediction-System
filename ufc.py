@@ -231,6 +231,7 @@ elif selected=="Did'nt Find your fighter?":
 
 
 elif selected=='contact':
+   st.header('Contact me with :')
    st.write('Check out my [Github Profile](https://github.com/Phani8910)')
    st.write('check out my [Kaggle Profile](https://www.kaggle.com/phanendrasairam)')
    st.write('Check out my [Linkedin Profile](https://www.linkedin.com/in/phanendra-sai-ram-505313226/)')
