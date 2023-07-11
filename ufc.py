@@ -172,68 +172,7 @@ elif selected=="Having Problem?":
                    3. There is a Logistic Regression model to predict the winner''')
    
    
-'''  
-names = pd.read_csv('fighter_names.csv')
 
-   l,m,r = st.columns((2,1,2))
-   with l:
-      fighter_1 = st.selectbox('select a fighter for red corner',names['Fighter_fullName'],key='red')
-      fighter_1_ = fighter_1.replace(' ','')
-      st.write(list(np.where(names["Fighter_fullName"] == fighter_1)))
-      if(fighter_1 == 'Conor McGregor'):
-          st.image('images-of-some-famous-fighters/conor.png',width=360)
-      elif(fighter_1 == 'Josh Emmett'):
-         st.image('images-of-some-famous-fighters/joshemmet.png',width=360)
-      elif(fighter_1 == 'Georges St-Pierre'):
-           st.image('images-of-some-famous-fighters/gsp.png',width=360)
-      elif(fighter_1 == 'Zabit Magomedsharipov'):
-           st.image('images-of-some-famous-fighters/zbt.png',width=360)
-   
-      else:
-         fighter1_url = f"https://fightingtomatoes.com/images/fighters/{fighter_1_}.jpg"
-         resp1 = requests.get(fighter1_url)
-         resp_bytesIO_1 = BytesIO(resp1.content)
-   
-         if(resp1.status_code!=200):
-            fighter1_url = "https://fightingtomatoes.com/images/fighters/blank-fighter-image.jpg"
-            resp1 = requests.get(fighter1_url)
-            resp_bytesIO_1 = BytesIO(resp1.content)
-   
-           
-           #fighter1_data = fighter_data[fighter_data['fighter_name']==selected_fighter_1]
-           
-         st.image(resp_bytesIO_1,width=400)
-
-   with r:
-      
-      fighter_2 = st.selectbox('select a fighter for blue corner',names['Fighter_fullName'],key='blue')
-      fighter_2_ = fighter_2.replace(' ','')
-      st.write(list(np.where(names["Fighter_fullName"] == fighter_2)))
-      if(fighter_2 == 'Conor McGregor'):
-          st.image('images-of-some-famous-fighters/conor.png',width=360)
-      elif(fighter_2 == 'Josh Emmett'):
-         st.image('images-of-some-famous-fighters/joshemmet.png',width=360)
-      elif(fighter_2 == 'Georges St-Pierre'):
-           st.image('images-of-some-famous-fighters/gsp.png',width=360)
-      elif(fighter_2 == 'Zabit Magomedsharipov'):
-           st.image('images-of-some-famous-fighters/zbt.png',width=360)
-   
-      else:
-         fighter2_url = f"https://fightingtomatoes.com/images/fighters/{fighter_2_}.jpg"
-         resp2 = requests.get(fighter2_url)
-         resp_bytesIO_2 = BytesIO(resp2.content)
-   
-         if(resp2.status_code!=200):
-            fighter2_url = "https://fightingtomatoes.com/images/fighters/blank-fighter-image.jpg"
-            resp2 = requests.get(fighter2_url)
-            resp_bytesIO_2 = BytesIO(resp2.content)
-   
-           
-           #fighter1_data = fighter_data[fighter_data['fighter_name']==selected_fighter_1]
-           
-         st.image(resp_bytesIO_2,width=400)
-
-'''
 
 
 if selected=='contact':
