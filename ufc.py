@@ -6,6 +6,7 @@ from streamlit_lottie import st_lottie
 import pickle
 import numpy as np
 import sklearn
+from streamlit_option_menu import option_menu
 
 
 selected_fighter_1 = 0
@@ -14,6 +15,7 @@ selected_fighter_2 = 0
 fighter_data = pd.read_csv('raw_fighter_details.csv')
 
 st.set_page_config(layout='wide')
+with option_menu('Main Menu',['Home',"Did'nt Find your fighter"])
    
 st.header('UFC fight Winner Prediction System')
 #fighter_df = pd.read_json('fighters.json',lines = True)[['name','wins','losses','draws']]
