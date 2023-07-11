@@ -165,7 +165,7 @@ if selected=='Home':
 #st.dataframe(df_blue[df_blue['fighter_name_Blue']=='Khabib Nurmagomedov'])
 
 # didnt find
-elif selected=="Having Problem":
+elif selected=="Having Problem?":
    st.header('UFC fight Winner Prediction System')
 
    names = pd.read_csv('fighter_names.csv')
