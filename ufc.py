@@ -167,8 +167,13 @@ if selected=='Home':
 # didnt find
 elif selected=="Having Problem?":
    st.header('UFC fight Winner Prediction System')
-
-   names = pd.read_csv('fighter_names.csv')
+   st.markdown(''' 1. Select a fighter for Red corner
+                   2. Select a fighter for Blue corner
+                   3. There is a Logistic Regression model to predict the winner''')
+   
+   
+'''  
+names = pd.read_csv('fighter_names.csv')
 
    l,m,r = st.columns((2,1,2))
    with l:
