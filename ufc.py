@@ -233,5 +233,6 @@ elif selected=="Did'nt Find your fighter?":
 elif selected=='contact':
    st.write('Check out my [Github Profile](https://github.com/Phani8910)')
    st.write('check out my [Kaggle Profile](https://www.kaggle.com/phanendrasairam)')
+   st.write('My mail ID [kattaphanendrasairam@gmail.com](kattaphanendrasairam@gmail.com)')
 
 
