@@ -35,7 +35,7 @@ if selected=='Home':
    
    
    with l:
-       selected_fighter_1 = str(st.selectbox('Select a Fighter for Red corner',list(set(df_red['fighter_name_Red'])),key='first',index=1202))
+       selected_fighter_1 = str(st.selectbox('Select a Fighter for Red corner',list(set(df_red['fighter_name_Red'])),key='first',index=146))
        selected_fighter_1_ = selected_fighter_1.replace(' ','')
        st.write(list(set(df_red['fighter_name_Red'])).index(selected_fighter_1))
        if(selected_fighter_1 == 'Conor McGregor'):
@@ -100,7 +100,7 @@ if selected=='Home':
    
    with r:
    
-       selected_fighter_2 = str(st.selectbox('Select a Fighter for Blue corner',list(set(df_blue['fighter_name_Blue'])),key='second',index=346))
+       selected_fighter_2 = str(st.selectbox('Select a Fighter for Blue corner',list(set(df_blue['fighter_name_Blue'])),key='second',index=1128))
        selected_fighter_2_ = selected_fighter_2.replace(' ','')
        st.write(list(set(df_blue['fighter_name_Blue'])).index(selected_fighter_2))
    
