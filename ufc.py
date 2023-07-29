@@ -8,7 +8,6 @@ import numpy as np
 import sklearn
 from streamlit_option_menu import option_menu
 
-
 selected_fighter_1 = 0
 selected_fighter_2 = 0
    
