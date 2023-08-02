@@ -168,12 +168,12 @@ elif selected=="Prediction vs Result":
    st.header("Let's See How accurate the Predictions were!")
    c1,c2 = st.columns(2)
    with c1:
-      st.image('Pred1.jpg')
-      st.image('Pred2.jpg')
+      st.image('UFC 291 Predictions and Results/Pred4.jpeg')
+      st.image('UFC 291 Predictions and Results/Pred3.jpeg')
    with c2:
-      st.image('Pred3.jpg')
-      st.image('Pred4.jpg')
-   st.image('Result.jpg')
+      st.image('UFC 291 Predictions and Results/Pred2.jpeg')
+      st.image('UFC 291 Predictions and Results/Pred1.jpeg')
+   st.image('UFC 291 Predictions and Results/Result.jpeg')
    
    
 
