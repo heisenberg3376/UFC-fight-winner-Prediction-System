@@ -164,11 +164,16 @@ if selected=='Home':
 #st.dataframe(df_blue[df_blue['fighter_name_Blue']=='Khabib Nurmagomedov'])
 
 # didnt find
-elif selected=="Having Problem?":
-   st.header('UFC fight Winner Prediction System')
-   st.markdown('''<h3>1. Select a fighter for Red corner</h3>
-                  <h3>2. Select a fighter for Blue corner</h3>
-                  <h3>3. There is a Logistic Regression model to predict the winner</h3>''',unsafe_allow_html=True)
+elif selected=="Prediction vs Result":
+   st.header("Let's See How accurate the Predictions were!")
+   c1,c2 = st.columns(2)
+   with c1:
+      st.image('Pred1.jpg')
+      st.image('Pred2.jpg')
+   with c2:
+      st.image('Pred3.jpg')
+      st.image('Pred4.jpg')
+   st.image('Result.jpg')
    
    
 
