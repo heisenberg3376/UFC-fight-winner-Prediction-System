@@ -167,13 +167,15 @@ if selected=='Home':
 elif selected=="Prediction vs Result":
    st.header("Let's See How accurate the Predictions were!")
    c1,c2 = st.columns(2, gap='large')
+   st.subheader('Predictions :')
    with c1:
-      st.image('UFC 291 Predictions and Results/Pred4.jpeg',width=300)
-      st.image('UFC 291 Predictions and Results/Pred3.jpeg',width=300)
+      st.image('UFC 291 Predictions and Results/Pred4.jpeg',width=450)
+      st.image('UFC 291 Predictions and Results/Pred3.jpeg',width=450)
    with c2:
-      st.image('UFC 291 Predictions and Results/Pred2.jpeg',width=300)
-      st.image('UFC 291 Predictions and Results/Pred1.jpeg',width=300)
-   st.image('UFC 291 Predictions and Results/Result.jpg')
+      st.image('UFC 291 Predictions and Results/Pred2.jpeg',width=450)
+      st.image('UFC 291 Predictions and Results/Pred1.jpeg',width=450)
+   st.subheader('Actual Results: ')
+   st.image('UFC 291 Predictions and Results/Result.jpg',width=600)
    
    
 
