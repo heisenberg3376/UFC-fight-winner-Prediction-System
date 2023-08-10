@@ -36,7 +36,7 @@ Follow these steps to set up the project locally:
 ## Usage
 1. Open the Streamlit app in your web browser.
 2. Input the names of two fighters competing in a UFC match.
-3. Click the "Predict Winner" button to receive the predicted outcome of the fight.
+3. Click the "Predict" button to receive the predicted outcome of the fight.
 
 ## Dependencies
 The project relies on the following key dependencies:
