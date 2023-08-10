@@ -26,7 +26,7 @@ Try out the [live demo](https://ufc-winner-prediction-system.streamlit.app) of t
 Follow these steps to set up the project locally:
 
 1. Clone the repository:
-   git clone https://github.com/yourusername/ufc-fight-prediction.git
+   git clone https://github.com/heisenberg3376/UFC-fight-winner-Prediction-System.git
 3. Install the required Python packages:
    pip install -r requirements.txt
 3. Run the Streamlit app:
