@@ -189,4 +189,6 @@ if selected=='contact':
    st.write('check out my [Kaggle Profile](https://www.kaggle.com/phanendrasairam)')
    st.write('Check out my [Linkedin Profile](https://www.linkedin.com/in/phanendra-sai-ram-505313226/)')
 
+if selected=='More Projects':
+   st.write('Check out [My Portfolio](https://heisenberg3376.github.io/PhanendraPortfolio.github.io/) for more exciting projects!')
 
