@@ -164,20 +164,20 @@ if selected=='Home':
 #st.dataframe(df_blue[df_blue['fighter_name_Blue']=='Khabib Nurmagomedov'])
 
 # didnt find
-elif selected=="Prediction vs Result":
+elif selected=="UFC291":
    st.header("Let's See How accurate the Predictions were!")
    st.write("##")
    st.subheader('Predictions :')
-   c1,c2 = st.columns(2, gap='large')
+   c1,c2 = st.columns(2, gap='medium')
    
    with c1:
-      st.image('UFC 291 Predictions and Results/Pred4.jpeg',width=500)
-      st.image('UFC 291 Predictions and Results/Pred3.jpeg',width=500)
+      st.image('UFC 291 Predictions and Results/Pred4.jpeg')
+      st.image('UFC 291 Predictions and Results/Pred3.jpeg')
    with c2:
-      st.image('UFC 291 Predictions and Results/Pred2.jpeg',width=500)
-      st.image('UFC 291 Predictions and Results/Pred1.jpeg',width=500)
+      st.image('UFC 291 Predictions and Results/Pred2.jpeg')
+      st.image('UFC 291 Predictions and Results/Pred1.jpeg')
    st.subheader('Actual Results: ')
-   st.image('UFC 291 Predictions and Results/Result.jpg',width=700)
+   st.image('UFC 291 Predictions and Results/Result.jpg')
    
    
 
