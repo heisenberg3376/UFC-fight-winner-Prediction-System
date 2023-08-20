@@ -45,6 +45,8 @@ if selected=='Home':
            st.image('images-of-some-famous-fighters/gsp.png',width=360)
        elif(selected_fighter_1 == 'Zabit Magomedsharipov'):
            st.image('images-of-some-famous-fighters/zbt.png',width=360)
+       elif(selected_fighter_1 == "Sean O'Malley"):
+           st.image('images-of-some-famous-fighters/sean.png',width=360)
    
        else:
            fighter1_url = f"https://fightingtomatoes.com/images/fighters/{selected_fighter_1_}.jpg"
@@ -111,6 +113,8 @@ if selected=='Home':
            st.image('images-of-some-famous-fighters/gsp.png',width=360)
        elif(selected_fighter_2 == 'Zabit Magomedsharipov'):
            st.image('images-of-some-famous-fighters/zbt.png',width=360)
+       elif(selected_fighter_2 == "Sean O'Malley"):
+           st.image('images-of-some-famous-fighters/sean.png',width=360)
        else:    
            fighter2_url = f"https://fightingtomatoes.com/images/fighters/{selected_fighter_2_}.jpg"
            resp2 = requests.get(fighter2_url)
